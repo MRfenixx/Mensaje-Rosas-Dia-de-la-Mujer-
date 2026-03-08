@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feliz Día de la Mujer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <svg class="root">
+            <defs>
+                <filter id="f" width="200" height="200" x="-100" y="-100">
+                    <feGaussianBlur
+                        in="SourceAlpha"
+                        stdDeviation="3"
+                        result="blur"
+                    ></feGaussianBlur>
+                    <feFlood flood-color="rgb(60,10,60)" result="color" />
+                    <feComposite
+                        in="color"
+                        in2="blur"
+                        operator="in"
+                        result="shadow"
+                    />
+                    <feOffset
+                        in="shadow"
+                        dx="3"
+                        dy="3"
+                        result="offset"
+                    ></feOffset>
+                    <feMerge>
+                        <feMergeNode in="offset" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <symbol id="petal2" viewBox="0 -100 200 200">
+                    <path
+                        transform="translate(0,-100)"
+                        d="M25.91,-15.12 Q0,0 25.91,15.12L94.09,54.889 Q120,70 142.58,50.24L177.42,19.76 Q200,0 177.42,-19.756L142.58,-50.24 Q120,-70 94.087,-54.88Z"
+                    ></path>
+                </symbol>
+
+                <symbol id="petal3" viewBox="0 -100 200 200">
+                    <path
+                        transform="translate(0,-100)"
+                        d="M27.69,-11.54  Q0,0 27.69,11.54  L92.3,38.46  Q120,50 145.44,34.1 L174.56,15.9  Q200,0 174.56,-15.9 L145.44,-34.1 Q120,-50 92.3,-38.46Z"
+                    ></path>
+                </symbol>
+
+                <symbol id="petal4" viewBox="0 -100 200 200">
+                    <path
+                        transform="translate(0,-100)"
+                        d="M28.09,-10.53 Q0,0 28.09,10.53L91.91,34.47 Q120,45 146.147,30.29L173.85,14.7 Q200,0 173.85,-14.7L146.15,-30.29 Q120,-45 91.91,-34.467Z"
+                    ></path>
+                </symbol>
+                <symbol id="petal5" viewBox="0 -100 200 200">
+                    <path
+                        transform="translate(0,-100)"
+                        d="M28.85,-8.24 Q0,0 28.85,8.24L111.15,31.76 Q140,40 164.96,23.36L175.04,16.64 Q200,0 175.038,-16.64L164.96,-23.36 Q140,-40 111.15,-31.76Z"
+                    ></path>
+                </symbol>
+            </defs>
+        </svg>
+
+        <svg
+            viewBox="0 0 10000 10000"
+            id="svg"
+            preserveAspectRatio="xMidYMid slice"
+            
+        ></svg>
+        
+        <!-- Contenedor de texto -->
+        <div class="text-container">
+            <h1 id="texto1">Feliz Día de la Mujer</h1>
+            <div id="texto2">
+                <p class="mensaje-principal">
+                    Buenas noches, hoy te quiero felicitar por ser una gran mujer. 
+                    De verdad que eres increíble, por eso te admiro mucho.
+                </p>
+                <p class="mensaje-principal">
+                    Espero que cumplas todas tus metas porque te lo mereces de verdad, 
+                    y espero que nunca dejes de ser quien eres, porque no hay mujer como tú.
+                </p>
+                <p class="mensaje-especial">
+                    Te hice esto para ti. <span class="destacado">Te quiero mucho</span>
+                </p>
+                <p class="instrucciones">
+                    <span class="desktop-instruction">💐 Mantén clic presionado y arrastra por la pantalla 💐</span>
+                    <span class="mobile-instruction">💐 Toca y arrastra por cualquier parte de la pantalla 💐</span>
+                </p>
+            </div>
+        </div>
+
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
